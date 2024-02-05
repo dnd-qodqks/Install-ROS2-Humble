@@ -32,10 +32,6 @@ sudo apt install ros-humble-desktop -y
 
 sudo apt install ros-dev-tools -y
 
-source /opt/ros/humble/setup.bash
-
-gedit ~/.bashrc
-
 echo "[Installing ROS2 Tools]"
 sudo apt update && sudo apt install -y \
   python3-flake8-docstrings \
