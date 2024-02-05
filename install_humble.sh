@@ -52,6 +52,9 @@ sudo apt install -y \
    python3-pytest-rerunfailures
 
 echo "[Set ROS2 alias]"
+
+name_ws="ros2_ws"
+
 sh -c "echo \"alias sb='source ~/.bashrc'\" >> ~/.bashrc"
 sh -c "echo \"alias gb='gedit ~/.bashrc'\" >> ~/.bashrc"
 
