@@ -32,31 +32,5 @@ sudo apt install ros-humble-desktop -y
 
 sudo apt install ros-dev-tools -y
 
-echo "[Installing ROS2 Tools]"
-sudo apt update && sudo apt install -y \
-  python3-flake8-docstrings \
-  python3-pip \
-  python3-pytest-cov \
-  ros-dev-tools
-
-
-sudo apt install -y \
-   python3-flake8-blind-except \
-   python3-flake8-builtins \
-   python3-flake8-class-newline \
-   python3-flake8-comprehensions \
-   python3-flake8-deprecated \
-   python3-flake8-import-order \
-   python3-flake8-quotes \
-   python3-pytest-repeat \
-   python3-pytest-rerunfailures
-
-# Delete Cache
-sudo rm /var/lib/apt/lists/lock
-sudo rm /var/cache/apt/archives/lock
-sudo rm /var/lib/dpkg/lcok*
-sudo dpkg --configure -a
-sudo apt update
-
 echo "[COMPLETE]"
 exit 0
