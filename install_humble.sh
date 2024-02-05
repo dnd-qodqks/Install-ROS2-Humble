@@ -51,24 +51,6 @@ sudo apt install -y \
    python3-pytest-repeat \
    python3-pytest-rerunfailures
 
-echo "[Set ROS2 alias]"
-
-name_ws="ros2_ws"
-
-sh -c "echo \"alias sb='source ~/.bashrc'\" >> ~/.bashrc"
-sh -c "echo \"alias gb='gedit ~/.bashrc'\" >> ~/.bashrc"
-
-sh -c "echo \"alias cw='cd ~/${name_ws}'\" >> ~/.bashrc"
-sh -c "echo \"alias cs='cd ~/${name_ws}/src'\" >> ~/.bashrc"
-
-sh -c "echo \"alias cb='cd ~/${name_ws} && colcon build --symlink-install'\" >> ~/.bashrc"
-sh -c "echo \"alias cba='colcon build --symlink-install'\" >> ~/.bashrc"
-sh -c "echo \"alias cbp='colcon build --symlink-install --packages-select'\" >> ~/.bashrc"
-
-sh -c "echo \"alias rt='ros2 topic list'\" >> ~/.bashrc"
-sh -c "echo \"alias re='ros2 topic echo'\" >> ~/.bashrc"
-sh -c "echo \"alias rn='ros2 node list'\" >> ~/.bashrc"
-
 # Delete Cache
 sudo rm /var/lib/apt/lists/lock
 sudo rm /var/cache/apt/archives/lock
